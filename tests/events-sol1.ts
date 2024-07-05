@@ -8,9 +8,9 @@ describe("events-sol1", () => {
 
   const program = anchor.workspace.EventsSol1 as Program<EventsSol1>;
 
-  it("Is initialized!", async () => {
+  it("Is created!", async () => {
     // Add your test here.
-    const tx = await program.methods.initialize().rpc();
+    const tx = await program.methods.create().rpc();
     console.log("Your transaction signature", tx);
   });
 });
